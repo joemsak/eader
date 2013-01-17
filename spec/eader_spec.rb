@@ -8,6 +8,10 @@ describe Eader do
     e.should have(1).dsc_levels
   end
 
+  it "returns the items" do
+    e.should have(1).items
+  end
+
   it "returns item unitids" do
     item.unitid.should == 'MR-0002'
   end
