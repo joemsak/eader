@@ -1,16 +1,10 @@
 module Eader
    class Document
-    attr_reader :path, :file, :doc
+    attr_reader :doc
 
     def initialize(path)
-      @path = path
-      @file = File.open(path)
-      @doc  = xml_doc_class.parse(file)
-    end
-
-    def content
-      file.rewind
-      file.read
+      file = File.open(path)
+      @doc = xml_doc_class.parse(file)
     end
 
     def items

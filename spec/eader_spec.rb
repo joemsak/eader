@@ -4,10 +4,6 @@ describe Eader do
   let!(:e) { Eader::Document.new('./spec/support/test.xml') }
   let(:item) { e.items.first }
 
-  it "opens the xml" do
-    e.content.should include('<ead>')
-  end
-
   it "returns dsc levels" do
     e.should have(1).dsc_levels
   end
