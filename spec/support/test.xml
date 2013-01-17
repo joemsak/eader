@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<?xml-stylesheet type="text/xsl" href="/assets/eadcbs2.xsl"?>
+<!DOCTYPE ead PUBLIC "+//ISBN 1-931666-00-8//DTD ead.dtd Encoded Archival Description (EAD) Version 2002//EN" "/assets/ead.dtd">
+
+<!--KDM: added namespace info here-->
+<ead>
+    <eadheader repositoryencoding="iso15511" id="a0" countryencoding="iso3166-1" langencoding="iso639-2b" audience="internal" dateencoding="iso8601" scriptencoding="iso15924">
+        <eadid encodinganalog="856$u" url="" countrycode="US" mainagencycode="US-ICIU"/>
+        <filedesc>
+            <titlestmt>
+                <titleproper encodinganalog="245$a">The Malachi Ritscher Collection</titleproper>
+                <subtitle>Live concert recordings (1981 – 2006) and other material</subtitle>
+                <author encodinganalog="245$c">Experimental Sound Studio</author>
+            </titlestmt>
+            <publicationstmt>
+                <publisher encodinganalog="260$b">Creative Audio Archive (CAA)/Experimental Sound
+                    Studio (ESS)</publisher>
+                <date type="publication" encodinganalog="260$c">2012</date>
+                <address>
+                    <addressline>5925 N. Ravenswood</addressline>
+                    <addressline>Chicago, IL 60660</addressline>
+                    <addressline id="email">info@creativeaudioarchive.org</addressline>
+                    <addressline id="weblink">www.creativeaudioarchive.org</addressline>
+                </address>
+            </publicationstmt>
+        </filedesc>
+        <profiledesc>
+            <creation encodinganalog="500">Machine-readable finding aid and skeletal markup derived
+                via a macro from Oxygen file; markup checked and completed by Allison Schein. <date normal="20060512">July 7, 2012.</date>
+            </creation>
+            <langusage>
+                <language encodinganalog="546">English</language>
+            </langusage>
+        </profiledesc>
+    </eadheader>
+    <archdesc level="collection" type="combined" relatedencoding="MARC21">
+        <did id="a1">
+            <head>Collection Summary</head>
+            <repository label="Repistory:" encodinganalog="852$a">
+                <corpname>Experimental Sound Studio</corpname>
+                <address>
+                    <addressline>5925 N. Ravenswood</addressline>
+                    <addressline>Chicago, IL 60660</addressline>
+                </address>
+            </repository>
+            <origination label="Creator:" encodinganalog="110">
+                <corpname>Malachi Ritscher,1954 – 2006 </corpname>
+            </origination>
+            <unittitle encodinganalog="245" label="Title:">Malachi Ritscher Collection</unittitle>
+            <unitdate type="inclusive" label="Dates:" encodinganalog="245$f">1981 - 2006</unitdate>
+            <physdesc label="Quantity:" encodinganalog="300$a">
+                <extent>4,438 items including DVD's, CD's DATS, cassettes, HI-8 and various other media formats. Approximately 40 linear feet </extent>
+            </physdesc>
+            <abstract label="Abstract:" encodinganalog="520$a">The Malachi Ritscher Collection represents the work of Chicago sound recordist Malachi Ritscher (1954-2006.)
+                The collection contains over 4,000 live recordings, dating from the early 1980s to 2006, mostly recorded in Chicago, and most documenting the work of Chicago musicians. 
+            </abstract>
+            <unitid encodinganalog="099" repositorycode="US-ICIU" label="Identification:" countrycode="US"/>
+            <langmaterial encodinganalog="546$a">eng</langmaterial>
+            <note label="Note" encodinganalog="500$a">
+                <p>Both the finding aid and the collection itself are currently to be considered works in progress. 
+                    Rather than wait until the entire collection is processed before making it generally available to 
+                    researchers--our usual practice--we have decided to make each series available as it is completed.
+                    </p>
+            </note>
+        </did>
+        <bioghist altrender="biography" encodinganalog="545" id="a2">
+            <head>History of the Collection</head>
+            <p>Malachi Ritscher, formerly Mark David Ritscher, was born in Dickinson, North Dakota in 1954. 
+                In 1981 Mr. Ritscher moved to Chicago where he played bass guitar in several musical groups (Want Not, Arsenal and Book of Holy Lies.) 
+                Mr. Ritscher worked at the University of Chicago as a maintenance engineer for much of his time in Chicago.</p>
+            <p>Mr. Ritscher was well known in Chicago not only as a passionate fan of the local music scene but as an accomplished and meticulous documentarian. 
+                Mr. Ritscher attended thousands of musical performances, many of which he recorded using various handheld recording devices. 
+                His early cassette recordings from the 1980s capture a wide range of local, national and international artists performing in Chicago venues. 
+                These cassettes contain otherwise unavailable live recordings of notable artists and groups such as Nirvana, James Brown, Nick Cave and the Bad Seeds, Bauhaus, Ministry, 
+                the Red Hot Chili Peppers and Laurie Anderson.</p>
+            <p>In the late 1980s Mr. Ritscher began making high fidelity recordings of performances using a handheld Digital Audio Tape recorder (DAT). 
+                While Mr. Ritscher continued to document performances of well-known artists, the vast majority of these later recordings were of concerts in the idiom of creative and 
+                improvised music with particular attention paid to local artists such as Ken Vandermark, Josh Abrams, Jeff Parker, Hamid Drake, Dave Rempis and Michael Zerang. 
+                These recordings often featured collaborations between Chicago artists and visiting European musicians. 
+                Mr. Ritscher recorded these performances at various local venues including the Velvet Lounge and the Empty Bottle.</p>
+            <p>After his death in 2006, Mr. Ritscher willed his collection of recordings to longtime friend Bruno Johnson to administer and disperse. 
+                In 2004 Mr. Johnson contacted the Experimental Sound Studios and later donated the collection to the repositories’ Creative Audio Archives for research and preservation.  </p>
+        </bioghist>
+        <scopecontent encodinganalog="520" id="a3">
+            <head>Scope and Contents</head>
+            <p>The Malachi Ritscher Collection (1981-2006) contains over 4,000 sound recordings and 438 unique ephemeral pieces. 
+                The recordings of concerts, primarily in the idioms of creative jazz and improvised music dating from the early 1980s to 2006, 
+                mostly recorded in Chicago, document the work of Chicago musicians. This includes numerous recordings of Chicago musicians collaborating 
+                with important European improvisers, such as Peter Brötzmann, Derek Bailey, Ab Baars, Mats Gustafsson, and others, as well as many concerts 
+                by members of the Association for the Advancement of Creative Musicians, such as Roscoe Mitchell, Hamid Drake, Fred Anderson, Harrison Bankhead, and others. 
+                There are also rare recordings of singular events, such as the 1981 Women’s Jazz Festival in Kansas City, and complete recordings of the Empty Bottle Jazz Festivals from 1999-2004. 
+                The collection also contains some of the recording and playback equipment Mr. Ritscher used to make his recordings as well as recording logs, set lists and fliers from performances 
+                he recorded and recordings of musical groups he played in.</p>
+        </scopecontent>
+        <arrangement encodinganalog="351">
+            <head>Arrangement of the Collection</head>
+            <p>The Malachi Ritscher Collections is arranged in 5 series. 
+                
+                Series 1, Live Recordings, 1982-2006, contains the live recordings that comprise the bulk of the collection. Series1 is arranged chronologically. Whenever possible, date and venue information has been included in the item level description as well as a note with transcriptions of Mr. Ritscher’s handwritten labels. A supplemental index has been created to allow users to search the collection using the artist’s name. 
+                
+                Series 2, Documentation, 1997-2005, is made up of Mr. Ritscher’s personal documentation. Items include Mr. Ritscher’s recording notes, notebooks and logs and correspondence. Series 2 is arranged chronologically. 
+                
+                Series 3, Ephemera, 1982-1987, contains all of the ephemeral materials in the collection. These include ticket stubs, programs fliers and set lists from concerts. 
+                Series 3 is arranged chronologically. 
+                
+                Series 4, Creative Works, 1981-1989, contains Mr. Ritscher’s musical works. Series 4 is arranged chronologically. 
+                
+                Series 5, Equipment, consists of recording and playback equipment as well as media storage devices such as hard drives and floppy discs. Series 5 is arranged alphabetically.
+            </p>
+        </arrangement>
+        <accessrestrict encodinganalog="506" id="a14">
+            <head>Restrictions on Access</head>
+            <p>Material is available to interested researchers by appointment.</p>
+        </accessrestrict>
+        <userestrict encodinganalog="540" id="a15">
+            <head>Restrictions on Use</head>
+            <p>All material is copyright restricted to the individual artists that appear in the 
+                recordings.</p>
+        </userestrict>
+        <!--KDM: there were stray </p></note></c01> tags here-->
+        <acqinfo encodinganalog="541">
+            <head>Acquisition Information</head>
+            <p>The bulk of the collection was acquired by ESS on DVD's, CD's cassettes and DAT's.</p>
+        </acqinfo>
+        <processinfo encodinganalog="583">
+            <head>Processing Information</head>
+            <p>Sonia Yoon managed the organization of the collection and supervised the cataloging. Allison Schein conducted the
+                limited transfer audio to digital files. Allison Schein and Patrick Seymour
+                identified each recording by artist, date, location, duration, track listing and number. Craig Klein created Biographical Information and History of the Collection and the Scope and Contents of the Collection. Special thanks to Karen Miller for all her assistance in creating this document.
+            </p>
+        </processinfo>
+<dsc>
+  <c01 level="item">
+        <did>
+            <unitid countrycode="iso3166-1" repositorycode="iso15511"> MR-0002 </unitid>
+            <origination> N/A </origination>
+            <langmaterial>English</langmaterial>
+            <unittitle> 5 empty loose CD jewel cases [sound recording]</unittitle>
+            <unitdate type="inclusive"> </unitdate>
+        </did>
+    </c01>
+</dsc>
+</ead>
