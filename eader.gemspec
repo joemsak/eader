@@ -8,8 +8,8 @@ Gem::Specification.new do |gem|
   gem.version       = Eader::VERSION
   gem.authors       = ["Joe Sak"]
   gem.email         = ["joe@joesak.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Parse ead documents}
+  gem.summary       = %q{Parse ead documents}
   gem.homepage      = ""
 
   gem.files         = `git ls-files`.split($/)
