@@ -1,24 +1,38 @@
 # Eader
 
-TODO: Write a gem description
+Parse EAD xml easily
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
-    gem 'eader'
+```ruby
+gem 'eader', '~> 0.0.2'
+```
 
 And then execute:
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install eader
+```
+$ bundle
+```
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+doc = Eader::Document.new('/path/or/url/to/file.xml')
+doc.dsc_levels #=> [#<Nokogiri::XML::Element ...>, ...]
+doc.items      #=> [#<Eader::Item ...>, ...]
+
+
+item = doc.items.first
+
+item.unitid        #=> 'MR-0002'
+item.origination   #=> 'N/A'
+item.langmaterial  #=> 'English'
+item.unittitle     #=> '5 empty loose CD jewel cases [sound recording]'
+item.unitdate      #=> 'Jan 15, 2001'
+item.unitdate_type #=> 'inclusive'
+```
 
 ## Contributing
 
