@@ -1,9 +1,11 @@
+require 'open-uri'
+
 module Eader
    class Document
     attr_reader :doc
 
     def initialize(path)
-      file = File.open(path)
+      file = open(path)
       @doc = xml_doc_class.parse(file)
     end
 

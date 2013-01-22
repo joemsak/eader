@@ -2,10 +2,14 @@ require "spec_helper"
 
 describe Eader do
   let!(:e) { Eader::Document.new('./spec/support/test.xml') }
+  let(:i) { Eader::Document.new(ENV['REMOTE_URL']) }
   let(:item) { e.items.first }
 
   it "returns dsc levels" do
     e.should have(1).dsc_levels
+
+    # checking that remote url works
+    i.should have(4434).dsc_levels
   end
 
   it "returns the items" do
