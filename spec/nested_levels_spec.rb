@@ -9,4 +9,12 @@ describe "EAD XML with nested levels" do
     i = doc.items.first
     i.unitid.should == '1_ESS'
   end
+
+  it "returns the series" do
+    doc.should have(1).series
+  end
+
+  it "returns the subseries" do
+    doc.should have(1).subseries
+  end
 end
