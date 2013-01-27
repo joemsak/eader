@@ -7,7 +7,7 @@ Parse EAD xml easily
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'eader', '~> 0.0.2'
+gem 'eader', '~> 0.0.3'
 ```
 
 And then execute:
