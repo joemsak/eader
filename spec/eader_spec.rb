@@ -5,15 +5,11 @@ describe Eader do
   let(:i) { Eader::Document.new(ENV['REMOTE_URL']) }
   let(:item) { e.items.first }
 
-  it "returns dsc levels" do
-    e.should have(1).dsc_levels
+  it "returns items" do
+    e.should have(1).items
 
     # checking that remote url works
-    i.should have(4434).dsc_levels
-  end
-
-  it "returns the items" do
-    e.should have(1).items
+    i.should have(4434).items
   end
 
   it "returns item unitids" do

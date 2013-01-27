@@ -10,13 +10,17 @@ module Eader
     end
 
     def items
-      dsc_levels.map do |d|
-        Item.new(d.css('did'))
-      end
-    end
+      @items ||= []
 
-    def dsc_levels
-      doc.css('dsc c01')
+      (1..3).each do |n|
+        doc.css("dsc c0#{n}").map do |c|
+          if c['level'] == 'item'
+            @items << Item.new(c.css('did'))
+          end
+        end
+      end
+
+      @items
     end
 
     private
