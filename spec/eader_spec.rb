@@ -36,10 +36,35 @@ describe Eader do
   end
 
   it "returns items' scope_content" do
-    item.scope_content.should == "<p>Thurman Barker, percussion</p><p>Recorded live 1987.03.21, Links Hall, 3435 N. Sheffield, Chicago, IL 60657</p><p>Contents: [Introduction] (2 min. 17 sec.) -- [\"The Hunt\"] (11 min. 7 sec.) --[Untitled] (11 min. 19 sec.) -- [Untitled] (10 min. 42 sec.) -- [\"Blue ingreen\"] (12 min. 5 sec.) -- [Intermission] (2 min. 40 sec.) --[\"Kalingalinga\"] (17 min. 1 sec.) -- [\"Hocus Pocus\"] (21 min. 15 sec.) --[Outro] (2 min. 19 sec.)</p>"
+    expected  = <<-EOD
+ <p>Thurman Barker, percussion</p>
+          <p>Recorded live 1987.03.21, Links Hall, 3435 N. Sheffield, Chicago, IL 60657</p>
+          <p>Contents: [Introduction] (2 min. 17 sec.) -- ["The Hunt"] (11 min. 7 sec.) --
+            [Untitled] (11 min. 19 sec.) -- [Untitled] (10 min. 42 sec.) -- ["Blue in
+            green"] (12 min. 5 sec.) -- [Intermission] (2 min. 40 sec.) --
+            ["Kalingalinga"] (17 min. 1 sec.) -- ["Hocus Pocus"] (21 min. 15 sec.) --
+            [Outro] (2 min. 19 sec.)</p>
+
+    EOD
+
+    content = item.scope_content.gsub(/\n\s+/, ' ')
+
+    content.should == expected.gsub(/\n\s+/, ' ')
   end
 
   it "returns items' note" do
+    expected = <<-EOD
+ <p>Barker's recent activities include a trio with Joseph Jarman and Amina
+            Claudine Meyers, and solo work on marimba, traps and xylophone. He has
+            recorded with Muhal Richard Abrams, Sam Rivers, Anthony Braxton, Roscoe
+            Mitchell, Billy Bang, John Lindberg and the World Bass Violin Ensemble, to
+            name a few. [Links Hall Program Schedule, March-June 1987]</p>
+
+    EOD
+
+    note = item.note.gsub(/\n\s+/, ' ')
+
+    note.should == expected.gsub(/\n\s+/, ' ')
   end
 
   it "returns items' user_restrict" do

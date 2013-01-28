@@ -44,7 +44,13 @@ module Eader
 
     def scope_content
       if (sc = node.css('scopecontent')).any?
-        sc[0].children.to_s.gsub(/\n\s+/,'')
+        sc[0].children.to_s
+      end
+    end
+
+    def note
+      if (n = node.css('note')).any?
+        n[0].children.to_s
       end
     end
 
