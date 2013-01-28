@@ -12,7 +12,7 @@ module Eader
     def series
       doc.css('dsc c01').map do |c|
         if c['level'] == 'series'
-          Item.new(c.css('did'))
+          Item.new(c)
         end
       end.compact
     end
@@ -20,7 +20,7 @@ module Eader
     def subseries
       doc.css('dsc c02').map do |c|
         if c['level'] == 'subseries'
-          Item.new(c.css('did'))
+          Item.new(c)
         end
       end.compact
     end
@@ -31,7 +31,7 @@ module Eader
       (1..3).each do |n|
         doc.css("dsc c0#{n}").map do |c|
           if c['level'] == 'item'
-            @items << Item.new(c.css('did'))
+            @items << Item.new(c)
           end
         end
       end

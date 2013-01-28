@@ -7,25 +7,25 @@ module Eader
     end
 
     def unitid
-      if (uid = node.css('unitid')).any?
+      if (uid = node.css('did unitid')).any?
         uid[0].text.strip
       end
     end
 
     def origination
-      if (orig = node.css('origination')).any?
+      if (orig = node.css('did origination')).any?
         orig[0].text.strip
       end
     end
 
     def langmaterial
-      if (langm = node.css('langmaterial')).any?
+      if (langm = node.css('did langmaterial')).any?
         langm[0].text.strip
       end
     end
 
     def unittitle
-      if (ut = node.css('unittitle')).any?
+      if (ut = node.css('did unittitle')).any?
         ut[0].text.strip
       end
     end
@@ -42,9 +42,15 @@ module Eader
       end
     end
 
+    def scope_content
+      if (sc = node.css('scopecontent')).any?
+        sc[0].children.to_s.gsub(/\n\s+/,'')
+      end
+    end
+
     private
     def _unit_dates
-      node.css('unitdate')
+      node.css('did unitdate')
     end
   end
 end
