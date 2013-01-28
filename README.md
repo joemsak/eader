@@ -7,7 +7,7 @@ Parse EAD xml easily
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'eader', '~> 0.0.3'
+gem 'eader', '~> 0.0.4'
 ```
 
 And then execute:
@@ -20,8 +20,7 @@ $ bundle
 
 ```ruby
 doc = Eader::Document.new('/path/or/url/to/file.xml')
-doc.dsc_levels #=> [#<Nokogiri::XML::Element ...>, ...]
-doc.items      #=> [#<Eader::Item ...>, ...]
+doc.items      #=> [#<Eader::Item ...>, #<Eader::Item ...>, etc...]
 
 
 item = doc.items.first
@@ -32,6 +31,9 @@ item.langmaterial  #=> 'English'
 item.unittitle     #=> '5 empty loose CD jewel cases [sound recording]'
 item.unitdate      #=> 'Jan 15, 2001'
 item.unitdate_type #=> 'inclusive'
+item.scope_content #=> '<p>Usually there is html in here</p>'
+item.note          #=> '<p>Also usually html in here, too</p>'
+item.use_restrict  #=> 'The copyright notice usually is here'
 ```
 
 ## Contributing
