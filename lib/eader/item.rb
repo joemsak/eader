@@ -54,6 +54,12 @@ module Eader
       end
     end
 
+    def use_restrict
+      if (ur = node.css('userestrict')).any?
+        ur[0].text.strip
+      end
+    end
+
     private
     def _unit_dates
       node.css('did unitdate')

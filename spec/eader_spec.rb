@@ -67,6 +67,7 @@ describe Eader do
     note.should == expected.gsub(/\n\s+/, ' ')
   end
 
-  it "returns items' user_restrict" do
+  it "returns items' use_restrict" do
+    item.use_restrict.should == 'Material is copyright of respective artists.'
   end
 end
