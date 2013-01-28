@@ -22,7 +22,6 @@ $ bundle
 doc = Eader::Document.new('/path/or/url/to/file.xml')
 doc.items      #=> [#<Eader::Item ...>, #<Eader::Item ...>, etc...]
 
-
 item = doc.items.first
 
 item.unitid        #=> 'MR-0002'
