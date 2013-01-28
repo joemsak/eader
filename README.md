@@ -32,7 +32,7 @@ item.unittitle     #=> '5 empty loose CD jewel cases [sound recording]'
 item.unitdate      #=> 'Jan 15, 2001'
 item.unitdate_type #=> 'inclusive'
 item.scope_content #=> '<p>Usually there is html in here</p>'
-item.note          #=> '<p>Also usually html in here, too</p>'
+item.note          #=> '<p>Also usually html in here</p>'
 item.use_restrict  #=> 'The copyright notice usually is here'
 ```
 
