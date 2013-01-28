@@ -7,62 +7,51 @@ module Eader
     end
 
     def unitid
-      if (uid = node.css('did unitid')).any?
-        uid[0].text.strip
-      end
+      find('did unitid')
     end
 
     def origination
-      if (orig = node.css('did origination')).any?
-        orig[0].text.strip
-      end
+      find('did origination')
     end
 
     def langmaterial
-      if (langm = node.css('did langmaterial')).any?
-        langm[0].text.strip
-      end
+      find('did langmaterial')
     end
 
     def unittitle
-      if (ut = node.css('did unittitle')).any?
-        ut[0].text.strip
-      end
-    end
-
-    def unitdate
-      if _unit_dates.any?
-        _unit_dates[0].text.strip
-      end
-    end
-
-    def unitdate_type
-      if _unit_dates.any?
-        _unit_dates[0].attr('type')
-      end
+      find('did unittitle')
     end
 
     def scope_content
-      if (sc = node.css('scopecontent')).any?
-        sc[0].children.to_s
-      end
+      find('scopecontent', :html => true)
     end
 
     def note
-      if (n = node.css('note')).any?
-        n[0].children.to_s
-      end
+      find('note', :html => true)
     end
 
     def use_restrict
-      if (ur = node.css('userestrict')).any?
-        ur[0].text.strip
-      end
+      find('userestrict')
+    end
+
+    def unitdate
+      find('did unitdate')
+    end
+
+    def unitdate_type
+      node.css('did unitdate')[0].attr('type')
     end
 
     private
-    def _unit_dates
-      node.css('did unitdate')
+    def find(selector, options = {})
+      results = node.css(selector)
+      return nil unless results.any?
+
+      if options[:html]
+        results[0].children.to_s
+      else
+        results[0].text.strip
+      end
     end
   end
 end
